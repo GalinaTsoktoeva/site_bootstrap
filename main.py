@@ -9,7 +9,7 @@ serverPort = 8080
 class MyServer(BaseHTTPRequestHandler):
     def __get_index(self):
         return """
-        <!-- CSS -->
+<!-- CSS -->
 <style>
     @media (min-width: 768px) {
         .navbar-container {
@@ -103,18 +103,18 @@ class MyServer(BaseHTTPRequestHandler):
                         <form class="border border-light rounded-3">
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Имя</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                <input name="name" type="text" class="form-control" id="exampleInputEmail1"
                                        aria-describedby="emailHelp">
                             </div>
                             <label for="exampleInputEmail1" class="form-label">Почта</label>
                             <div class="input-group mb-3">
                                 <span class="input-group-text" id="basic-addon1">@</span>
-                                <input type="text" class="form-control" aria-label="Username"
+                                <input name="email" type="email" class="form-control" aria-label="Username"
                                        aria-describedby="basic-addon1">
                             </div>
                             <div class="mb-3">
                                 <label for="exampleFormControlTextarea1" class="form-label">Сообщение</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                             </div>
 
                             <button type="submit" class="btn btn-primary">Отправить</button>
@@ -138,6 +138,7 @@ class MyServer(BaseHTTPRequestHandler):
 
     def do_GET(self):
         query_components = parse_qs(urlparse(self.path).query)
+        print(query_components)
         page_content = self.__get_index()
         self.send_response(200)
         self.send_header("Content-type", "text/html")
