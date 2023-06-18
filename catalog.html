@@ -1,0 +1,160 @@
+<!-- CSS -->
+<style>
+    @media (min-width: 768px) {
+        .navbar-container {
+            position: sticky;
+            top: 0;
+            overflow-y: auto;
+            height: 100vh;
+        }
+
+        .navbar-container .navbar {
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .navbar-container .navbar-collapse {
+            align-items: flex-start;
+        }
+
+        .navbar-container .nav {
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+
+        .navbar-container .navbar-nav {
+            flex-direction: column !important;
+        }
+    }
+</style>
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Главная</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4 col-lg-3 navbar-container bg-dark">
+            <!-- Вертикальное меню -->
+            <nav class="navbar navbar-expand-md bg-dark"data-bs-theme="dark">
+              <a class="navbar-brand" href="#">
+                <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24"
+                     class="d-inline-block align-text-top">
+                Меню
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+                      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <!-- Пункты вертикального меню -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#link-1">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#link-2">Категории</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#link-3">Заказы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#link-4">Контакты</a>
+                        </li>
+                        <li class="nav-item dropdown fixed-bottom">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                Пользователи</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Профиль</a></li>
+                                <li><a class="dropdown-item" href="#">Выход</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="col-md-8 col-lg-9 content-container">
+            <h2 class="text-center mt-5">Каталог</h2>
+            <div class="container">
+                <div class="row mt-5 justify-content-center">
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col">
+                            <div class="card h-70">
+                                <img src="https://nitecore-shop.ru/image/cache/catalog/Produkts/takticheskiy-ryukzak-nitecore-bp20-16828-1500x1500.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                        <button type="button" class="btn btn-outline-secondary">View</button>
+                                        <button type="button" class="btn btn-outline-secondary">Edit</button>
+                                    </div>
+                                    <small class="text-body-secondary">3 mins.</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-70">
+                                <img src="https://ae04.alicdn.com/kf/Se5788b9849ca47a282a641e8dcaf38017.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                        <button type="button" class="btn btn-outline-secondary">View</button>
+                                        <button type="button" class="btn btn-outline-secondary">Edit</button>
+                                    </div>
+                                    <small class="text-body-secondary">3 mins.</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-70">
+                                <img src="https://static.lichi.com/product/43104/0c26fc25462d0619e860e614ba4eac1c.jpg?v=2_43104.2&resize=size-middle" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                        <button type="button" class="btn btn-outline-secondary">View</button>
+                                        <button type="button" class="btn btn-outline-secondary">Edit</button>
+                                    </div>
+                                        <small class="text-body-secondary">3 mins.</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-70">
+                                <img src="https://ninetygorussia.com/wp-content/uploads/2022/03/white3-4.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                        <button type="button" class="btn btn-outline-secondary">View</button>
+                                        <button type="button" class="btn btn-outline-secondary">Edit</button>
+                                    </div>
+                                    <small class="text-body-secondary">3 mins.</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
